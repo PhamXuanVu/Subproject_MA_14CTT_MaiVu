@@ -21,6 +21,7 @@ public class Screen3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen3);
         final ImageView img_play = findViewById(R.id.bt_play);
+        final ImageView img_pause = findViewById(R.id.bt_pause);
         connection = new ServiceConnection() {
 
             @Override
@@ -51,16 +52,33 @@ public class Screen3 extends AppCompatActivity {
             }
         });
 
-//        img_pause.setOnClickListener(new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View v) {
-//
-//                if (isBound) {
-//                    unbindService(connection);
-//                    isBound = false;
-//                }
-//            }
-//        });
+        img_pause.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if (isBound) {
+                    unbindService(connection);
+                    isBound = false;
+                }
+            }
+        });
+        final ImageView img_back1 = findViewById(R.id.img_back1);
+        img_back1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(Screen3.this,Screen2.class);
+                startActivity(intent1);
+            }
+        });
+        final ImageView img_screen4 = findViewById(R.id.img_screen4);
+        img_screen4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(Screen3.this,Screen4.class);
+                startActivity(intent2);
+            }
+        });
     }
+
 }

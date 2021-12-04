@@ -62,4 +62,14 @@
         app:layout_constraintHorizontal_bias="0.785"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_map"
+        android:layout_width="79dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_27" />
 </androidx.constraintlayout.widget.ConstraintLayout>

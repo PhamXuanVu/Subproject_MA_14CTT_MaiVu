@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DeTai</string>
+    <string name="map_api_key">AIzaSyDoLv002d6n90c4FH1liJOaPePIbfeF0OU</string>
 </resources>

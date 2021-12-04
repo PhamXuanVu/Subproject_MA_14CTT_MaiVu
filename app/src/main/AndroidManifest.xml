@@ -9,6 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DeTai">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key" />
+        <activity
+            android:name=".ScreenMap"
+            android:exported="false" />
+        <activity
+            android:name=".Screen4"
+            android:exported="false" />
         <activity
             android:name=".Screen3"
             android:exported="true" />
@@ -24,6 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <service android:name=".MyService" />
     </application>
 
