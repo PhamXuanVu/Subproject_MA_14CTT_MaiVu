@@ -9,34 +9,6 @@
     tools:context=".Screen2">
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="234dp"
-        android:layout_height="198dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toEndOf="@+id/img1"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:srcCompat="@drawable/img_1" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="147dp"
-        android:layout_height="129dp"
-        android:layout_marginTop="47dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:srcCompat="@drawable/img_2" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="147dp"
-        android:layout_height="129dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="47dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:srcCompat="@drawable/img_2" />
-
-    <ImageView
         android:id="@+id/imageView"
         android:layout_width="54dp"
         android:layout_height="31dp"
@@ -60,40 +32,21 @@
         android:id="@+id/imageView3"
         android:layout_width="284dp"
         android:layout_height="33dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@drawable/img_4" />
 
     <ImageView
-        android:id="@+id/img1"
-        android:layout_width="234dp"
-        android:layout_height="198dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:srcCompat="@drawable/img_1" />
-
-    <ImageView
         android:id="@+id/imageView5"
         android:layout_width="288dp"
         android:layout_height="38dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="396dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_5" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="147dp"
-        android:layout_height="129dp"
-        android:layout_marginTop="47dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:srcCompat="@drawable/img_2" />
 
     <ImageView
         android:id="@+id/bt_logout"
@@ -104,4 +57,22 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_26" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView1"
+        android:layout_width="398dp"
+        android:layout_height="243dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="402dp"
+        android:layout_height="213dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
